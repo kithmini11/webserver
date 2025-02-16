@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Wildlife Conservation Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        :root {
+            --primary: #2C5F2D;
+            --secondary: #97BC62;
+            --accent: #E0DAA8;
+            --neutral: #F5F5F5;
+            --dark: #333;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--dark);
+            line-height: 1.6;
+            background-color: var(--neutral);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .error-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 2rem;
+            position: relative;
+        }
+
+        .error-hero {
+            background: linear-gradient(rgba(1, 19, 1, 0.9), rgba(1, 41, 1, 0.8)),
+                        url('image6.jpeg') center/cover;
+            border-radius: 20px;
+            padding: 6rem 2rem;
+            text-align: center;
+            color: white;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+        }
+        
+        .error-content {
+            position: relative;
+            z-index: 2;
+            max-width: 600px;
+            margin: 0 auto;            
+            padding: 3rem;
+            border-radius: 15px;            
+        }
+
+        .error-hero h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 95px;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        .error-hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .home-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--accent);
+            color: var(--primary);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .home-button:hover {
+            background: transparent;
+            color: var(--accent);
+            border-color: var(--accent);
+        }
+
+        @media (max-width: 768px) {
+            .error-container {
+                margin: 1rem;
+            }
+
+            .error-hero {
+                padding: 4rem 1rem;
+            }
+
+            .error-hero h1 {
+                font-size: 3rem;
+            }
+
+            .error-content {
+                padding: 2rem;
+            }            
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <section class="error-hero">            
+            <div class="error-content">
+                <h1>404</h1>
+                <p>Oops! The page you're looking for doesn't exist...</p>
+                <a href="index.html" class="home-button">Return to Home</a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
